@@ -16,7 +16,7 @@ button, .cta-box {
     background-color: #3882f6;
 }
 
-h1, .logo {
+h1, button, .logo, .footer, .cta-box{
     color: #f9faf8;
 }
 
@@ -24,7 +24,7 @@ h2, .quote {
     color: #1f2937;
 }
 
-.quote-box {
+.low-content {
     background-color: #e5e7eb;
 }
 
@@ -34,12 +34,14 @@ h2, .quote {
 
 h1{
     font-size: 48px;
-    font-weight: extra-bold;
+    font-weight: 900;
+    margin: 0;
 }
 
 h2 {
     font-size: 36px;
-    font-weight: extra-bold;
+    font-weight: 900;
+    text-align: center;
 }
 
 .quote {
@@ -48,15 +50,93 @@ h2 {
     font-weight: 100;
 }
 
-body, .header, .up-header, .low-header, .b-box, .h1, .h-sec-text, .content, .card,
-.quote-box, .up-footer, .cta-box, .cta-text, .footer {
+body, .header, .header-2, .up-header, .low-header, .b-box, .h1, .h-sec-text, .low-content,
+.quote-box, .content, .card, .up-footer, .cta-box, .cta-text, .footer, .links {
     display: flex;
 }
 
-body, .header, .b-box, .cta-text {
+body, .header-2, .b-box, .cta-text, .card, .quote-box{
     flex-direction: column;
 }
 
-body,{
+body, .up-header, .b-box{
     justify-content: space-between;
+}
+
+.header, .content, .low-content, .quote-box, .up-footer, .footer {
+    justify-content: center;
+}
+
+.low-header {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.b-box {
+    height: 250px;
+    width: 475px;
+}
+
+.h-sec-text, h3, .cta-subtext {
+    margin: 0;
+}
+
+button {
+    width: 100px;
+    height: 25px;
+    border-radius: 4px;
+}
+
+.h-button {
+    align-self: flex-start;
+    border: 0px;
+}
+
+.links {
+    gap: 16px;
+}
+
+.card {
+    width: 150px;
+    text-align: center;
+}
+
+.content {
+    gap: 50px;
+}
+
+.card-img {
+    height: 150px;
+    width: 150px;
+    border: 4px solid #3882f6;
+    border-radius: 12px;
+}
+
+.quote-box {
+    height: 500px;
+    width: 800px;
+}
+
+.quote-cred {
+    align-self: flex-end;
+    margin-top: -40px;
+}
+
+.cta-box {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 900px;
+    height: 100px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.f-button {
+    border-color: #f9faf8;
+}
+
+.footer {
+    height: 80px;
+    align-items: center;
 }
